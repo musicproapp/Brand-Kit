@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">MusicPro light app icon</title>
+  <desc id="desc">MusicPro waveform M on a light rounded-square background.</desc>
+  <rect width="512" height="512" rx="112" fill="#FFFFFF"/>
+  <g>
+    <rect x="56" y="96" width="40" height="320" rx="20" fill="#0091FF"/>
+    <rect x="116" y="148" width="40" height="216" rx="20" fill="#00C7FF"/>
+    <rect x="176" y="196" width="40" height="136" rx="20" fill="#00E5D4"/>
+    <rect x="236" y="236" width="40" height="152" rx="20" fill="#2ED573"/>
+    <rect x="296" y="188" width="40" height="144" rx="20" fill="#A3E635"/>
+    <rect x="356" y="144" width="40" height="224" rx="20" fill="#FACC15"/>
+    <rect x="416" y="96" width="40" height="320" rx="20" fill="#F59E0B"/>
+  </g>
+</svg>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MusicPro — Brand Kit Showcase</title>
+  <link rel="icon" type="image/svg+xml" href="../logo/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body {
+      background: var(--mp-bg, #F7F9FC);
+      color: var(--mp-text, #101828);
+      font-family: var(--mp-font-sans, "Inter", sans-serif);
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    .showcase-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .header-card {
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 20px;
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 4px 20px rgba(16, 24, 40, 0.04);
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      color: #101828;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .asset-card {
+      background: #FFFFFF;
+      border: 1px solid #E4E7EC;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(16, 24, 40, 0.03);
+    }
+    .asset-card.dark {
+      background: #08111C;
+      border-color: #1E293B;
+      color: #FFFFFF;
+    }
+    .asset-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .asset-name {
+      margin-top: 14px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .asset-path {
+      font-family: var(--mp-font-mono, monospace);
+      font-size: 11px;
+      color: #667085;
+      margin-top: 4px;
+    }
+    .asset-card.dark .asset-path {
+      color: #94A3B8;
+    }
+    .color-chip {
+      height: 60px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="showcase-wrapper">
+
+    <!-- HEADER -->
+    <header class="header-card">
+      <img src="../logo/musicpro-mark.svg" width="64" height="64" alt="MusicPro Logo">
+      <div>
+        <div style="font-size:11px; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; color:#007BFF; margin-bottom:4px">Design System v1.1</div>
+        <h1 style="font-size:32px; font-weight:800; margin:0; line-height:1.1">MusicPro Brand Kit</h1>
+        <p style="color:#475467; font-size:14px; margin:6px 0 0">Canonical master mark, typography, design tokens, and favicon suite.</p>
+      </div>
+    </header>
+
+    <!-- SECTION 1: MASTER LOGO SYSTEM -->
+    <section>
+      <div class="section-title">Master 3-Line Logo System</div>
+      <div class="grid-3">
+        <div class="asset-card">
+          <img src="../logo/musicpro-mark.svg" alt="Full Color Mark">
+          <div class="asset-name">Master Full Color</div>
+          <div class="asset-path">logo/musicpro-mark.svg</div>
+        </div>
+        <div class="asset-card">
+          <img src="../logo/musicpro-mark-black.svg" alt="Monochrome Black">
+          <div class="asset-name">Monochrome Black</div>
+          <div class="asset-path">logo/musicpro-mark-black.svg</div>
+        </div>
+        <div class="asset-card dark">
+          <img src="../logo/musicpro-mark-white.svg" alt="Monochrome White">
+          <div class="asset-name">Monochrome White</div>
+          <div class="asset-path">logo/musicpro-mark-white.svg</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: APP ICONS & FAVICONS -->
+    <section>
+      <div class="section-title">App Icons &amp; Favicon Suite</div>
+      <div class="grid-4">
+        <div class="asset-card">
+          <img src="../logo/musicpro-app-dark.svg" alt="Dark App Icon">
+          <div class="asset-name">Dark App Icon</div>
+          <div class="asset-path">logo/musicpro-app-dark.svg</div>
+        </div>
+        <div class="asset-card">
+          <img src="../logo/musicpro-app-light.svg" alt="Light App Icon">
+          <div class="asset-name">Light App Icon</div>
+          <div class="asset-path">logo/musicpro-app-light.svg</div>
+        </div>
+        <div class="asset-card">
+          <img src="../logo/favicon.svg" alt="Vector Favicon">
+          <div class="asset-name">Vector Favicon</div>
+          <div class="asset-path">logo/favicon.svg</div>
+        </div>
+        <div class="asset-card">
+          <img src="../logo/apple-touch-icon.svg" alt="Apple Touch Icon">
+          <div class="asset-name">Apple Touch Icon</div>
+          <div class="asset-path">logo/apple-touch-icon.svg</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE BRAND COLORS -->
+    <section>
+      <div class="section-title">Core Brand Palette</div>
+      <div class="grid-3">
+        <div class="asset-card" style="align-items:stretch; text-align:left">
+          <div class="color-chip" style="background:#0091FF"></div>
+          <div class="asset-name">MusicPro Blue (#0091FF)</div>
+          <div class="asset-path">Left Bar • Primary Interactive</div>
+        </div>
+        <div class="asset-card" style="align-items:stretch; text-align:left">
+          <div class="color-chip" style="background:#2ED573"></div>
+          <div class="asset-name">MusicPro Green (#2ED573)</div>
+          <div class="asset-path">Center Bar • Active Audio / Success</div>
+        </div>
+        <div class="asset-card" style="align-items:stretch; text-align:left">
+          <div class="color-chip" style="background:#F59E0B"></div>
+          <div class="asset-name">MusicPro Orange (#F59E0B)</div>
+          <div class="asset-path">Right Bar • Accent &amp; Highlights</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ARCHIVED ALTERNATES -->
+    <section>
+      <div class="section-title">Archived Alternates (7-Bar Waveform)</div>
+      <div class="grid-3">
+        <div class="asset-card">
+          <img src="../logo/alternate-7bar/musicpro-mark.svg" alt="7-Bar Mark">
+          <div class="asset-name">7-Bar Full Color</div>
+          <div class="asset-path">logo/alternate-7bar/musicpro-mark.svg</div>
+        </div>
+        <div class="asset-card">
+          <img src="../logo/alternate-7bar/musicpro-mark-black.svg" alt="7-Bar Black">
+          <div class="asset-name">7-Bar Black</div>
+          <div class="asset-path">logo/alternate-7bar/musicpro-mark-black.svg</div>
+        </div>
+        <div class="asset-card dark">
+          <img src="../logo/alternate-7bar/musicpro-mark-white.svg" alt="7-Bar White">
+          <div class="asset-name">7-Bar White</div>
+          <div class="asset-path">logo/alternate-7bar/musicpro-mark-white.svg</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

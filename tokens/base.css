@@ -1,0 +1,9 @@
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body { margin: 0; }
+img, svg { max-width: 100%; }
+button, input, select, textarea { font: inherit; }

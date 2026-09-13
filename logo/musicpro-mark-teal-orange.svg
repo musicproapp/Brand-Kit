@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">MusicPro mark (Teal &amp; Orange)</title>
+  <desc id="desc">Three rounded vertical bars in teal, dark teal, and orange.</desc>
+  <g>
+    <rect x="72" y="136" width="96" height="240" rx="48" fill="#159B88"/>
+    <rect x="208" y="80" width="96" height="352" rx="48" fill="#0D7568"/>
+    <rect x="344" y="160" width="96" height="192" rx="48" fill="#E47C2E"/>
+  </g>
+</svg>
