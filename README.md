@@ -1,70 +1,65 @@
-# MusicPro Minimal Branding Kit v1.0
+# MusicPro Minimal Branding Kit v1.1
 
 This is the canonical starter kit for building future MusicPro websites, web apps/PWAs, desktop-style music tools, PDFs, documentation, and product materials.
 
 ## Brand
 
-Master brand: MusicPro
-Primary domain: MusicPro.app
+- **Master brand:** MusicPro
+- **Primary domain:** MusicPro.app
 
-The approved master symbol is the simplified seven-bar waveform M. It uses straight vertical rounded bars only. Do not replace it with the older quarter-note, tape, note-ring, indigo mark, or other experimental logos.
+The approved master symbol is the **three-line equalizer/waveform mark** consisting of three vertically centered rounded bars with a strict 15 : 22 : 12 height ratio (Left: medium blue, Center: tall green, Right: short orange). It serves as both the canonical brand mark and the high-visibility favicon.
+
+*(The earlier seven-bar waveform M is preserved under `logo/alternate-7bar/` as an approved alternate).*
 
 ## Source of truth
 
-Use these files as the canonical references:
+Use these files as canonical references:
 
-- logo/musicpro-mark.svg — full-color transparent master mark
-- logo/musicpro-mark-black.svg — black monochrome mark
-- logo/musicpro-mark-white.svg — white monochrome mark
-- logo/musicpro-app-dark.svg — dark app icon
-- logo/musicpro-app-light.svg — light app icon
-- tokens/colors.css — canonical color tokens
-- tokens/typography.css — canonical typography tokens
-- tokens/spacing.css — spacing, radius, shadow, and motion tokens
-- tokens/base.css — base CSS normalization
-- styles.css — web entrypoint
-- BRAND-SYSTEM.md — concise design rules and implementation guidance
+- `logo/musicpro-mark.svg` — full-color master 3-line mark (`#0091FF`, `#2ED573`, `#F59E0B`)
+- `logo/musicpro-mark-black.svg` — black monochrome 3-line mark
+- `logo/musicpro-mark-white.svg` — white monochrome 3-line mark
+- `logo/musicpro-app-dark.svg` — dark app icon
+- `logo/musicpro-app-light.svg` — light app icon
+- `logo/favicon.svg` & `logo/favicon.ico` — production browser favicon suite
+- `logo/apple-touch-icon.svg` — iOS home screen bookmark icon
+- `logo/alternate-7bar/` — archived 7-bar waveform M alternate suite
+- `tokens/colors.css` — canonical color tokens
+- `tokens/typography.css` — canonical typography tokens
+- `tokens/spacing.css` — spacing, radius, shadow, and motion tokens
+- `tokens/base.css` — base CSS normalization
+- `styles.css` — web entrypoint
+- `BRAND-SYSTEM.md` — design rules and implementation guidance
 
 ## Typography
 
-Inter is the primary UI and body family.
-Newsreader is the display/editorial family where a serif treatment is appropriate.
-JetBrains Mono is the technical/code family.
+- **Inter** is the primary UI, navigation, and body family.
+- **Newsreader** is the display/editorial serif family for editorial titles.
+- **JetBrains Mono** is the technical/code family for product keys, MIDI values, and timestamps.
 
-For PDFs, use locally installed or embedded font files when possible. Do not depend on a web-font import inside a PDF renderer.
+For PDFs, use locally installed or embedded font files (`fonts/` directory). Do not depend on external web-font imports inside a headless PDF renderer.
 
 ## Color
 
-The logo palette is the source of truth for brand color. The principal brand action color is blue. Cyan, teal, green/lime, yellow, and orange are supporting brand colors. Do not introduce the former indigo/purple palette as a new MusicPro brand color.
-
-## Themes
-
-Support both light and dark themes. Dark interfaces should use a deep neutral background rather than a purple/indigo background.
-
-## Product branding
-
-Products such as MIDI Enhancer are products of MusicPro. Keep the master MusicPro mark recognizable and consistent. Product-specific accents may be introduced later, but they must not redefine the master brand palette.
+The master mark palette is the source of truth for brand color:
+- **Left bar:** MusicPro Blue (`#0091FF` / `#007BFF`) — principal interactive/action color
+- **Center bar:** MusicPro Green (`#2ED573`) — accent / active audio color
+- **Right bar:** MusicPro Orange (`#F59E0B`) — warm highlight / badge color
 
 ## Logo rules
 
-Use the SVG files whenever possible. Do not recreate the mark manually from screenshots. Do not stretch, skew, recolor individual bars, add curves, add music notes, or add decorative elements to the master mark.
-
-For small sizes, prefer the canonical symbol-only SVG. If a future product requires a simplified small-size mark, create it as a documented derivative rather than modifying the master asset.
+1. Always use vector SVG files whenever possible.
+2. Maintain the fixed 15 : 22 : 12 height proportions and vertical center alignment.
+3. Do not stretch, skew, rotate, or add decorative effects to the mark.
+4. For micro-scales (browser tabs, app badges), use `logo/favicon.svg` or `logo/favicon.ico`.
+5. For monochrome print, use `logo/musicpro-mark-black.svg`.
 
 ## For coding agents
 
 Before creating a new MusicPro page or application:
 
-1. Read BRAND-SYSTEM.md.
-2. Load tokens/colors.css, typography.css, spacing.css, and base.css or styles.css.
-3. Use the canonical SVG from logo/.
-4. Preserve the light/dark theme model.
-5. Do not introduce legacy Music Pro Hacks branding, old indigo/cream colors, quarter-note marks, tape marks, note-ring marks, or other archived logos.
-6. Do not invent a new visual language when an existing token or component can be reused.
-7. If a new component is needed, make it consistent with the existing spacing, radius, typography, border, and interaction tokens.
-8. Treat MusicPro as the master brand and the application name as the product name.
-
-## Scope
-
-This kit intentionally stays minimal. It contains reusable brand assets and implementation guidance, not a complete application UI library or a complete PDF template.
-# Brand-Kit
+1. Read `BRAND-SYSTEM.md`.
+2. Load `tokens/colors.css`, `typography.css`, `spacing.css`, and `base.css` (or `styles.css`).
+3. Use the canonical SVG from `logo/`.
+4. Default to clean, high-contrast light mode with crisp typography.
+5. Do not introduce legacy "Guitar Producer" or "Music Pro Hacks" branding.
+6. Treat **MusicPro** as the master brand and the specific tool as the product name.
