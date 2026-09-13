@@ -1,4 +1,4 @@
-# MusicPro Minimal Branding Kit v1.1
+# MusicPro Minimal Branding Kit v1.2
 
 This is the canonical starter kit for building future MusicPro websites, web apps/PWAs, desktop-style music tools, PDFs, documentation, and product materials.
 
@@ -6,6 +6,7 @@ This is the canonical starter kit for building future MusicPro websites, web app
 
 - **Master brand:** MusicPro
 - **Primary domain:** MusicPro.app
+- **Official YouTube:** @musicproapp (URL: `https://youtube.com/@musicproapp`)
 
 The approved master symbol is the **three-line equalizer/waveform mark** consisting of three vertically centered rounded bars with a strict 15 : 22 : 12 height ratio (Left: medium blue, Center: tall green, Right: short orange). It serves as both the canonical brand mark and the high-visibility favicon.
 
@@ -20,7 +21,10 @@ Use these files as canonical references:
 - `logo/musicpro-mark-white.svg` — white monochrome 3-line mark
 - `logo/musicpro-app-dark.svg` — dark app icon
 - `logo/musicpro-app-light.svg` — light app icon
-- `logo/favicon.svg` & `logo/favicon.ico` — production browser favicon suite
+- `logo/favicon.svg` & `logo/favicon.ico` — production browser favicon suite (100% alpha transparent)
+- `logo/favicon.png` & `logo/favicons.png` — transparent favicon icon & multi-option comparison sheet
+- `logo/favicon-*.png` — 32-bit RGBA transparent rasters (`16x16`, `32x32`, `48x48`, `180x180`, `192x192`, `512x512`)
+- `logo/options/` — complete favicon suites for all 4 transparency options (Floating, Luminous, Rim, Squircle)
 - `logo/apple-touch-icon.svg` — iOS home screen bookmark icon
 - `logo/alternate-7bar/` — archived 7-bar waveform M alternate suite
 - `tokens/colors.css` — canonical color tokens
@@ -45,13 +49,14 @@ The master mark palette is the source of truth for brand color:
 - **Center bar:** MusicPro Green (`#2ED573`) — accent / active audio color
 - **Right bar:** MusicPro Orange (`#F59E0B`) — warm highlight / badge color
 
-## Logo rules
+## Logo & Favicon rules
 
 1. Always use vector SVG files whenever possible.
-2. Maintain the fixed 15 : 22 : 12 height proportions and vertical center alignment.
-3. Do not stretch, skew, rotate, or add decorative effects to the mark.
-4. For micro-scales (browser tabs, app badges), use `logo/favicon.svg` or `logo/favicon.ico`.
-5. For monochrome print, use `logo/musicpro-mark-black.svg`.
+2. Favicons and app marks must have **true 32-bit RGBA transparency** (no opaque white square background).
+3. Maintain the fixed 15 : 22 : 12 height proportions and vertical center alignment.
+4. Do not stretch, skew, rotate, or add decorative effects to the mark.
+5. For micro-scales (browser tabs, app badges), use `logo/favicon.svg` or `logo/favicon.ico`.
+6. For monochrome print, use `logo/musicpro-mark-black.svg`.
 
 ## For coding agents
 
